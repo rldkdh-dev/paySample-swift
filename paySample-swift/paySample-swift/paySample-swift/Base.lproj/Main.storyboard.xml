@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BeforePayController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="beforePay" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="BeforePayController" customClass="BeforePayController" customModule="paySample_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nYP-5T-8lS">
+                                <rect key="frame" x="16" y="28" width="343" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOY-ak-FDo" userLabel="parameter contents">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="300"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueb-eL-0Ln" userLabel="moid">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상점주문번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-WV-GmV" userLabel="moid_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="nM8-bb-aeB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test20180803133703" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-w6-ngT" userLabel="moid_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Wcq-WV-GmV" firstAttribute="top" secondItem="ueb-eL-0Ln" secondAttribute="top" id="1ag-wx-clS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DaS-w6-ngT" secondAttribute="bottom" id="CR3-xz-u6F"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DaS-w6-ngT" secondAttribute="trailing" id="OHd-4e-1L6"/>
+                                                    <constraint firstItem="DaS-w6-ngT" firstAttribute="top" secondItem="ueb-eL-0Ln" secondAttribute="top" id="TGJ-dx-Zcv"/>
+                                                    <constraint firstItem="Wcq-WV-GmV" firstAttribute="leading" secondItem="ueb-eL-0Ln" secondAttribute="leading" id="ncJ-zr-RhZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Wcq-WV-GmV" secondAttribute="bottom" id="p9M-ai-Gk3"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izu-yO-cXX" userLabel="goodsName">
+                                                <rect key="frame" x="0.0" y="30" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okj-PN-8Ys" userLabel="goodsName_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="3d5-Ee-30h"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="테스트상품" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9g-LP-K4a" userLabel="goodsName_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="x9g-LP-K4a" firstAttribute="top" secondItem="Izu-yO-cXX" secondAttribute="top" id="9lV-8g-Qv3"/>
+                                                    <constraint firstItem="okj-PN-8Ys" firstAttribute="top" secondItem="Izu-yO-cXX" secondAttribute="top" id="LCf-1A-4yX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="x9g-LP-K4a" secondAttribute="trailing" id="MSL-Lo-Mys"/>
+                                                    <constraint firstItem="okj-PN-8Ys" firstAttribute="leading" secondItem="Izu-yO-cXX" secondAttribute="leading" id="Tu6-K5-QY9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="x9g-LP-K4a" secondAttribute="bottom" id="x43-Mg-P7c"/>
+                                                    <constraint firstAttribute="bottom" secondItem="okj-PN-8Ys" secondAttribute="bottom" id="z5t-t4-d7l"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0S-bz-zju" userLabel="goodsAmt">
+                                                <rect key="frame" x="0.0" y="60" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pD-2z-iit" userLabel="goodsAmt_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="8JS-tW-7Vt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1004" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ndY-Dq-9QF" userLabel="goodsAmt_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ndY-Dq-9QF" secondAttribute="bottom" id="CcS-Rk-i1d"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0pD-2z-iit" secondAttribute="bottom" id="D6Q-2j-rWi"/>
+                                                    <constraint firstItem="ndY-Dq-9QF" firstAttribute="top" secondItem="q0S-bz-zju" secondAttribute="top" id="Nza-Cs-8j5"/>
+                                                    <constraint firstItem="0pD-2z-iit" firstAttribute="leading" secondItem="q0S-bz-zju" secondAttribute="leading" id="eSP-IH-YMO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ndY-Dq-9QF" secondAttribute="trailing" id="i3D-Es-iTm"/>
+                                                    <constraint firstItem="0pD-2z-iit" firstAttribute="top" secondItem="q0S-bz-zju" secondAttribute="top" id="zcl-xd-bdT"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F35-4Y-wW2" userLabel="dutyFreeAmt">
+                                                <rect key="frame" x="0.0" y="90" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면세금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-YE-Yok" userLabel="dutyFreeAmt_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="OsB-HX-Mwy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GTp-9x-NeG" userLabel="dutyFreeAmt_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ugG-YE-Yok" secondAttribute="bottom" id="Tsr-04-k1g"/>
+                                                    <constraint firstItem="ugG-YE-Yok" firstAttribute="top" secondItem="F35-4Y-wW2" secondAttribute="top" id="XmH-Eg-gfF"/>
+                                                    <constraint firstItem="GTp-9x-NeG" firstAttribute="top" secondItem="F35-4Y-wW2" secondAttribute="top" id="d9z-tE-dG3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GTp-9x-NeG" secondAttribute="trailing" id="dAm-cH-TCH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GTp-9x-NeG" secondAttribute="bottom" id="r0h-Q3-OHN"/>
+                                                    <constraint firstItem="ugG-YE-Yok" firstAttribute="leading" secondItem="F35-4Y-wW2" secondAttribute="leading" id="zNC-9Z-7v7"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d2-7e-b0t" userLabel="goodsCnt">
+                                                <rect key="frame" x="0.0" y="120" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품개수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-zp-tPs" userLabel="goodsCnt_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="TFa-ii-Gsf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-Hb-4OL" userLabel="goodsCnt_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="vxn-Hb-4OL" firstAttribute="top" secondItem="7d2-7e-b0t" secondAttribute="top" id="6ni-mv-F9E"/>
+                                                    <constraint firstItem="glJ-zp-tPs" firstAttribute="top" secondItem="7d2-7e-b0t" secondAttribute="top" id="Isv-Av-vU9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vxn-Hb-4OL" secondAttribute="bottom" id="dsM-o1-BB3"/>
+                                                    <constraint firstItem="glJ-zp-tPs" firstAttribute="leading" secondItem="7d2-7e-b0t" secondAttribute="leading" id="eBr-pw-BmW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vxn-Hb-4OL" secondAttribute="trailing" id="fRf-us-WyO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="glJ-zp-tPs" secondAttribute="bottom" id="hYn-xO-nse"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-VJ-eam" userLabel="buyerName">
+                                                <rect key="frame" x="0.0" y="150" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매자명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-Mr-nHU" userLabel="buyerName_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Ewo-Ek-yr2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="테스트" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-1N-wyr" userLabel="buyerName_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="mJH-Mr-nHU" firstAttribute="leading" secondItem="vZb-VJ-eam" secondAttribute="leading" id="9Ol-vk-q5B"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mJH-Mr-nHU" secondAttribute="bottom" id="KcV-Db-lSY"/>
+                                                    <constraint firstItem="bX3-1N-wyr" firstAttribute="top" secondItem="vZb-VJ-eam" secondAttribute="top" id="Rqa-jj-3rB"/>
+                                                    <constraint firstItem="mJH-Mr-nHU" firstAttribute="top" secondItem="vZb-VJ-eam" secondAttribute="top" id="SaE-KS-I56"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bX3-1N-wyr" secondAttribute="bottom" id="lDW-P6-xw7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bX3-1N-wyr" secondAttribute="trailing" id="tTi-3G-Wn6"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRx-95-uvU" userLabel="mallUserID">
+                                                <rect key="frame" x="0.0" y="180" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매자아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1a-3l-nuL" userLabel="mallUserID_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="gg6-3v-Zk1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test001" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-ha-7Mo" userLabel="mallUserID_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="s5n-ha-7Mo" firstAttribute="top" secondItem="aRx-95-uvU" secondAttribute="top" id="3T6-jQ-veP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Y1a-3l-nuL" secondAttribute="bottom" id="OBX-mV-ctr"/>
+                                                    <constraint firstItem="Y1a-3l-nuL" firstAttribute="top" secondItem="aRx-95-uvU" secondAttribute="top" id="UyX-TX-QYR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="s5n-ha-7Mo" secondAttribute="bottom" id="aVE-Ld-dVz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="s5n-ha-7Mo" secondAttribute="trailing" id="an5-Xe-kHT"/>
+                                                    <constraint firstItem="Y1a-3l-nuL" firstAttribute="leading" secondItem="aRx-95-uvU" secondAttribute="leading" id="bdg-Fx-0AD"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onc-Ya-EQo" userLabel="buyerTel">
+                                                <rect key="frame" x="0.0" y="210" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매자연락처" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nl-yT-j6o" userLabel="buyerTel_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="1xb-No-m0p"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01012341234" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jfl-Sw-YtE" userLabel="buyerTel_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="tel"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="jfl-Sw-YtE" secondAttribute="bottom" id="17Y-Oa-H8L"/>
+                                                    <constraint firstItem="8Nl-yT-j6o" firstAttribute="leading" secondItem="Onc-Ya-EQo" secondAttribute="leading" id="HkH-Mv-LEH"/>
+                                                    <constraint firstItem="8Nl-yT-j6o" firstAttribute="top" secondItem="Onc-Ya-EQo" secondAttribute="top" id="VJj-Uk-q5h"/>
+                                                    <constraint firstItem="jfl-Sw-YtE" firstAttribute="top" secondItem="Onc-Ya-EQo" secondAttribute="top" id="crb-Ey-0nZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8Nl-yT-j6o" secondAttribute="bottom" id="qvZ-za-4nP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jfl-Sw-YtE" secondAttribute="trailing" id="rNs-Gm-PzV"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-Es-hHR" userLabel="buyerEmail">
+                                                <rect key="frame" x="0.0" y="240" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매자이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGE-Kx-2Ko" userLabel="buyerEmail_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="qrJ-k0-2Xi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@infinisoft.co.kr" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p84-na-Nkw" userLabel="buyerEmail_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="FGE-Kx-2Ko" secondAttribute="bottom" id="CNw-AB-QCo"/>
+                                                    <constraint firstItem="FGE-Kx-2Ko" firstAttribute="leading" secondItem="Uab-Es-hHR" secondAttribute="leading" id="GaA-M7-XlJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="p84-na-Nkw" secondAttribute="trailing" id="Hez-WY-FQa"/>
+                                                    <constraint firstItem="p84-na-Nkw" firstAttribute="top" secondItem="Uab-Es-hHR" secondAttribute="top" id="K5Q-cn-t5b"/>
+                                                    <constraint firstItem="FGE-Kx-2Ko" firstAttribute="top" secondItem="Uab-Es-hHR" secondAttribute="top" id="mQA-mg-BKc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="p84-na-Nkw" secondAttribute="bottom" id="teX-fo-cE0"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-sz-vhz" userLabel="offeringPeriod">
+                                                <rect key="frame" x="0.0" y="270" width="343" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제공기간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31P-LP-Ywf" userLabel="offeringPeriod_label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ngQ-iH-pf6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2018.1.1 ~ 2020.12.31" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vE-uw-oUc" userLabel="offeringPeriod_textField">
+                                                        <rect key="frame" x="100" y="0.0" width="243" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="31P-LP-Ywf" firstAttribute="top" secondItem="W5L-sz-vhz" secondAttribute="top" id="8e8-Qk-kzE"/>
+                                                    <constraint firstItem="31P-LP-Ywf" firstAttribute="leading" secondItem="W5L-sz-vhz" secondAttribute="leading" id="RPe-uv-pWV"/>
+                                                    <constraint firstItem="9vE-uw-oUc" firstAttribute="top" secondItem="W5L-sz-vhz" secondAttribute="top" id="eKw-jb-UOx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="31P-LP-Ywf" secondAttribute="bottom" id="hFQ-cc-5yN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9vE-uw-oUc" secondAttribute="bottom" id="om6-C3-jKp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9vE-uw-oUc" secondAttribute="trailing" id="xff-9s-9zO"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mp-s0-EWP">
+                                <rect key="frame" x="16" y="629" width="343" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" label="결제"/>
+                                <state key="normal" title="결제">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPressPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8p-0q-H2d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nYP-5T-8lS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="2RR-CS-kmT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nYP-5T-8lS" secondAttribute="trailing" constant="16" id="5vu-Su-83i"/>
+                            <constraint firstItem="nYP-5T-8lS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6jK-TA-5O0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Mp-s0-EWP" secondAttribute="trailing" constant="16" id="g9U-jB-I5i"/>
+                            <constraint firstItem="3Mp-s0-EWP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ha0-e4-FYa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Mp-s0-EWP" secondAttribute="bottom" constant="8" id="ldj-p1-3zg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0AI-93-xeF"/>
+                    <connections>
+                        <outlet property="buyerEmailTextField" destination="p84-na-Nkw" id="jbx-jI-tnO"/>
+                        <outlet property="buyerNameTextField" destination="bX3-1N-wyr" id="7c0-ei-xn7"/>
+                        <outlet property="buyerTelTextField" destination="jfl-Sw-YtE" id="crg-QU-2JT"/>
+                        <outlet property="dutyFreeAmtTextField" destination="GTp-9x-NeG" id="rVN-Lr-vaV"/>
+                        <outlet property="goodsAmtTextField" destination="ndY-Dq-9QF" id="BLm-3J-Z7r"/>
+                        <outlet property="goodsCntTextField" destination="vxn-Hb-4OL" id="9bZ-rA-flv"/>
+                        <outlet property="goodsNameTextField" destination="x9g-LP-K4a" id="e0B-2K-NzZ"/>
+                        <outlet property="mallUserIDTextField" destination="s5n-ha-7Mo" id="2qV-vk-zBl"/>
+                        <outlet property="moidTextField" destination="DaS-w6-ngT" id="pKQ-mP-PEt"/>
+                        <outlet property="offeringPeriodTextField" destination="9vE-uw-oUc" id="aBQ-q3-Lg8"/>
+                        <segue destination="6gG-Yb-vfx" kind="show" identifier="goWeb" id="Nde-lP-IzI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--AfterPayController-->
+        <scene sceneID="a5K-rm-u2s">
+            <objects>
+                <viewController storyboardIdentifier="afterPay" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6gG-Yb-vfx" userLabel="AfterPayController" customClass="AfterPayController" customModule="paySample_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wPV-Lh-bXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ny5-U6-sk3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="결제화면" id="M8H-c9-tOY">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="6ft-k6-z71">
+                                            <connections>
+                                                <action selector="onPressBack:" destination="6gG-Yb-vfx" id="PGC-Bp-PJv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-t6-a5g">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ny5-U6-sk3" firstAttribute="top" secondItem="GlT-6A-yqp" secondAttribute="top" id="0hm-zS-ldW"/>
+                            <constraint firstItem="Ny5-U6-sk3" firstAttribute="leading" secondItem="GlT-6A-yqp" secondAttribute="leading" id="7Hk-J1-cOl"/>
+                            <constraint firstItem="GlT-6A-yqp" firstAttribute="bottom" secondItem="5fQ-t6-a5g" secondAttribute="bottom" id="7gu-vc-Zpp"/>
+                            <constraint firstItem="5fQ-t6-a5g" firstAttribute="leading" secondItem="GlT-6A-yqp" secondAttribute="leading" id="H8a-2H-IJC"/>
+                            <constraint firstItem="Ny5-U6-sk3" firstAttribute="trailing" secondItem="GlT-6A-yqp" secondAttribute="trailing" id="HC7-4q-jZO"/>
+                            <constraint firstItem="5fQ-t6-a5g" firstAttribute="top" secondItem="Ny5-U6-sk3" secondAttribute="bottom" id="QiK-7I-In4"/>
+                            <constraint firstItem="GlT-6A-yqp" firstAttribute="trailing" secondItem="5fQ-t6-a5g" secondAttribute="trailing" id="T8C-r8-UrF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GlT-6A-yqp"/>
+                    </view>
+                    <connections>
+                        <outlet property="webViewBox" destination="5fQ-t6-a5g" id="7wp-pw-t8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUM-dI-YYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.39999999999998" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
